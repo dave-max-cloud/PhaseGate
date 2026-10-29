@@ -1,4 +1,23 @@
 public class ArrayInArray{
+public static void main(String[] args){
+
+int [][]number = { 
+                 {1, 2, 3,},
+                 {4, 5, 6,},
+                 {7, 8, 9,}
+                 
+                 };
+  int[][]result = reverseArray(number);
+  for(int count = 0; count < result.length; count++){
+    for(int index = 0; index < result[count].length; index++){
+     System.out.print(result[count][index]);
+        }
+      System.out.println();
+     } 
+  }
+}
+
+
 public static int[][] reverseArray(int[][]number){
 for(int row = 0; row < number.length; row++){
   for(int count = 0; count < number[row].length; count++){
@@ -13,24 +32,6 @@ for(int row = 0; row < number.length; row++){
   
 }
 return number;
-}
-
-public static void main(String[] args){
-
-int [][]number = { 
-                 {1, 2, 3,},
-                 {4, 5, 6,},
-                 {7, 8, 9,}
-                 
-                 };
-  int[][]result = reverseArray(number);
-  for(int count = 0; count < result.length; count++){
-    for(int index = 0; index < result[count].length; index++){
-     System.out.print(result[count][index] + " , ");
-        }
-      System.out.println();
-     } 
-  }
 }
 
 
