@@ -47,7 +47,7 @@ int Parkslot = input.nextInt();
 
 int indexOfParkslot = Parkslot -1;
 
-if(Parkslot >= 0 && Parkslot <= 20){
+if(Parkslot >= 0 && Parkslot < 20){
   if(slot[indexOfParkslot] == 0){
     slot[indexOfParkslot] = 1;
     
